@@ -226,6 +226,7 @@
 // List of posts
 .post-item {
   display: flex;
+  align-items: baseline;
   padding-top: 5px;
   padding-bottom: 6px;
   @extend %clearfix;
@@ -240,6 +241,8 @@
     font-weight: normal;
     opacity: 0.5;
     padding-right: 10px;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 
     @include media-query($on-mobile) {
       font-size: 16px;
@@ -253,6 +256,7 @@
     font-size: $base-font-size;
     font-weight: 700;
     letter-spacing: 0.1px;
+    line-height: $base-line-height;
 
     a {
       color: $dark-white;
